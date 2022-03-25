@@ -14,19 +14,61 @@
   opacity: 0.6;
   text-decoration: line-through;
 }
-/* .Todo-task.completed::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -0.5rem;
-  display: block;
-  width: 0%;
-  height: 2px;
-  background: #fff;
-  animation: strikeitem 0.5s ease-out 0s forwards;
+
+.Todo-Buttons {
+  flex-shrink: 0;
+  padding-left: 0.7em;
 }
-@keyframes strikeitem {
-  to {
-    width: calc(100% + 1rem);
-  }
-} */
+
+.Todo-btn-Edit {
+  color: #fff;
+  background: #198754;
+  /* border-color: #198754; */
+}
+
+.Todo-btn-Delete {
+  color: #fff;
+  background: #dc3545;
+}
+.Todo-Buttons button {
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid transparent;
+  font-size: 1em;
+  border-radius: 0.25rem;
+  margin: 0.4em;
+  cursor: pointer;
+  padding: 6px 12px;
+}
+.Todo-edit-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Todo-edit-form input {
+  flex-grow: 1;
+  border: none;
+  background: #f7f1f1;
+  padding: 0 1.5em;
+  font-size: initial;
+}
+.Todo-edit-form button {
+  padding: 0 1.3rem;
+  border: none;
+  background: #ff6666;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-out;
+}
+.Todo-edit-form button:hover {
+  background: #ff5e5e;
+}
+.Todo-edit-form input,
+.Todo-edit-form button {
+  font-family: 'Quicksand', sans-serif;
+  height: 3rem;
+}
